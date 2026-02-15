@@ -984,5 +984,75 @@ body {
 .not-loaded * {
   animation-play-state: paused !important;
 }
+/* ===== ROMANTIK KIRMIZI TEMA ===== */
+:root{
+  --dark-color:#050510;
+}
+
+/* arka plan */
+body{
+  background: radial-gradient(circle at 50% 100%, #120018, #02020a 70%);
+}
+
+/* yapraklar */
+.flower__leaf{
+  background-image: linear-gradient(to top,#4b0012,#b3002d);
+  box-shadow: inset 0 0 2vmin rgba(255,120,120,0.5);
+}
+
+.flower__leaf--4{
+  background-image: linear-gradient(to top,#6b001a,#ff1e4d);
+}
+
+/* orta ışık */
+.flower__leafs::after{
+  background:#ff004c;
+  filter: blur(12vmin);
+}
+
+/* çiçek ortası */
+.flower__white-circle{
+  background:#1a001f;
+}
+.flower__white-circle::after{
+  background:linear-gradient(90deg,#ff003c,#7a001c);
+}
+
+/* sap */
+.flower__line{
+  background-image:
+  linear-gradient(to left,rgba(0,0,0,0.2),transparent,rgba(255,255,255,0.2)),
+  linear-gradient(to top,transparent 10%,#1b0030,#5b0a2a);
+}
+
+/* küçük yapraklar */
+.flower__line__leaf{
+  background-image: linear-gradient(to top,rgba(60,0,20,0.4),#a0003a);
+}
+
+/* ışık parçacıkları */
+.flower__light{
+  background:#ff004c;
+}
+.flower__light:nth-child(odd){
+  background:#5b00ff;
+}
+
+/* çimenler */
+.flower__grass,
+.flower__g-long,
+.long-g .leaf{
+  --c:#32003f;
+}
+
+.long-g .leaf{
+  border-left:2vmin solid #5a0030;
+}
+
+/* glow efekti */
+.flowers{
+  filter: drop-shadow(0 0 20px rgba(255,0,80,0.4))
+          drop-shadow(0 0 40px rgba(120,0,255,0.3));
+}
 
 /*# sourceMappingURL=style.css.map */
